@@ -12,3 +12,7 @@ body {
     flex-direction: column;
     gap: 8px;
 }
+
+.no-cursor {
+    cursor: none;
+}
