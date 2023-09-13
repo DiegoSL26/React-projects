@@ -1,26 +1,13 @@
-import { useEffect, useState } from 'react'
-import { CAT_IMAGE_URL } from './Constants'
 import './App.css'
-import { getRandomFact } from './services/facts'
+import { useCatImage } from './hooks/useCatImage'
+import { useCatFact } from './hooks/useCatFact'
 
 function App () {
-  const [fact, setFact] = useState()
-  const [imageUrl, setImageUrl] = useState()
-
-  useEffect(() => {
-    getRandomFact().then(setFact)
-  }, [])
-
-  useEffect(() => {
-    if (!fact) return
-    const firstThreeWords = fact.split(' ').slice(0, 3).join(' ')
-    const concatenatedUrl = `${CAT_IMAGE_URL}${firstThreeWords}`
-    setImageUrl(concatenatedUrl)
-  }, [fact])
+  const { fact, refreshFact } = useCatFact()
+  const { imageUrl } = useCatImage({ fact })
 
   const handleClick = async () => {
-    const newFact = await getRandomFact()
-    setFact(newFact)
+    refreshFact()
   }
 
   return (
