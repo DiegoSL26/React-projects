@@ -1,10 +1,8 @@
-import { useMovies } from '../hooks/useMovies'
-
 function MoviesListResult ({ movies }) {
   return (
-    <ul>
+    <ul className='movies'>
       {movies.map(movie => (
-        <li key={movie.id}>
+        <li className='movie' key={movie.id}>
           <h3>{movie.title}</h3>
           <p>{movie.year}</p>
           <img src={movie.poster} alt={`${movie.Title} poster`} />
@@ -20,13 +18,12 @@ function EmptyMoviesList () {
   )
 }
 
-export function Movies () {
-  const { movies } = useMovies()
-  const hasMovies = movies.length > 0
+export function Movies ({ moviesList }) {
+  const hasMovies = moviesList !== undefined
 
   return (
     hasMovies
-      ? <MoviesListResult movies={movies} />
+      ? <MoviesListResult movies={moviesList} />
       : <EmptyMoviesList />
   )
 }
