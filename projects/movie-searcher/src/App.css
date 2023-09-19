@@ -6,24 +6,91 @@
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    color: azure;
+    color: #fff;
     width: 100%;
+    
 }
 
 header {
     text-align: center;
+    color: #fff;
+    background-color: #4c00ff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 90px;
+    background: content-box linear-gradient(rgba(220, 20, 60, 0.095), rgba(135, 207, 235, 0.095));
+}
+
+.title {
+    font-size: 30px;
+    color: #fff;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.title:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 form {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    width: 70%;
+}
+
+hr {
+    width: 100%;
+    background-color: #fff;
+    height: 2px;
+    margin: 0px;
+    border: none;
+}
+
+.movieInput{
+    width: 50%;
+    border: 1px solid #fff;
+}
+
+.searchButton {
+    border: 1px solid #fff;
+}
+
+.sortCheckbox {
+    max-height: 42px;
+    background-color: #161f27;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.sortCheckbox input {
+    margin: 0;
+}
+
+.sortCheckbox p {
+    margin: 0;
 }
 
 .movies {
@@ -34,20 +101,38 @@ form {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
-    width: 100%;
+    width: 90%;
     gap: 32px;
+
+    align-items: center;
 }
 
 .movie h3, .movie p {
+    transition: transform 0.3s ease;
     margin: 0;
+}
+
+.movie h3:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .movie img {
     border-radius: 8px;
     margin-top: 16px;
+    border: 1px solid #fff;
+    transition: transform 0.3s ease;
 }
 
 .movie {
     margin-top: 20px;
     text-align: center;
+}
+
+.movie img:hover {
+    transform: scale(1.2); 
+    z-index: 1;
+    cursor: pointer;
 }

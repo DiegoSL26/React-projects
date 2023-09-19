@@ -36,16 +36,20 @@ function App () {
   return (
     <div className='page'>
       <header>
-        <h1>Movie searcher</h1>
+        <h1 className='title'>Movie searcher</h1>
         <form className='form' onSubmit={handleSubmit}>
           <input onChange={handleChange} value={query} name='query' className='movieInput' placeholder='Avengers, Star-wars, Fast...' />
-          <input type='checkbox' onChange={handleSort} checked={sort} />
-          <button onClick={handleSubmit}>Search</button>
+          <div className='sortCheckbox'>
+            <input type='checkbox' onChange={handleSort} checked={sort} />
+            <p>Sort alphabetically</p>
+          </div>
+          <button className='searchButton' onClick={handleSubmit}>Search</button>
         </form>
-        {error && <p style={{ color: 'red' }}>{error}</p>}
-      </header>
 
+      </header>
+      <hr />
       <main className='mainPage'>
+        {error && <p style={{ color: 'red' }}>{error}</p>}
         {loading ? <p>Cargando...</p> : <Movies moviesList={movies} />}
       </main>
 

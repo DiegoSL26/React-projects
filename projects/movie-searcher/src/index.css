@@ -30,7 +30,7 @@
   
   @media (prefers-color-scheme: dark) {
   :root {
-    --background-body: #202b38;
+    --background-body: #0e041b;
     --background: #161f27;
     --background-alt: #1a242f;
     --selection: #1c76c5;
@@ -111,9 +111,7 @@
   body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
     line-height: 1.4;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 10px;
+    margin: 0 auto;
     word-wrap: break-word;
     color: #363636;
     color: var(--text-main);
@@ -242,16 +240,6 @@
     margin-top: 0;
   }
   
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-bottom: 12px;
-    margin-top: 24px;
-  }
-  
   h1 {
     color: #000;
     color: var(--text-bright);
@@ -260,7 +248,7 @@
   @media (prefers-color-scheme: dark) {
   
     h1 {
-    color: #fff;
+    color: #000;
     color: var(--text-bright);
     }
   }
@@ -469,8 +457,6 @@
     background-color: var(--background);
     font-family: inherit;
     font-size: inherit;
-    margin-right: 6px;
-    margin-bottom: 6px;
     padding: 10px;
     border: none;
     border-radius: 6px;
@@ -500,8 +486,6 @@
     background-color: var(--background);
     font-family: inherit;
     font-size: inherit;
-    margin-right: 6px;
-    margin-bottom: 6px;
     padding: 10px;
     border: none;
     border-radius: 6px;
@@ -531,8 +515,6 @@
     background-color: var(--background);
     font-family: inherit;
     font-size: inherit;
-    margin-right: 6px;
-    margin-bottom: 6px;
     padding: 10px;
     border: none;
     border-radius: 6px;
@@ -562,8 +544,6 @@
     background-color: var(--background);
     font-family: inherit;
     font-size: inherit;
-    margin-right: 6px;
-    margin-bottom: 6px;
     padding: 10px;
     border: none;
     border-radius: 6px;
@@ -1267,12 +1247,6 @@
   video {
     max-width: 100%;
     height: auto;
-  }
-  
-  hr {
-    border: none;
-    border-top: 1px solid #dbdbdb;
-    border-top: 1px solid var(--border);
   }
   
   @media (prefers-color-scheme: dark) {
