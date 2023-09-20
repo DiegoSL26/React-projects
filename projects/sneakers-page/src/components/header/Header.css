@@ -1,0 +1,49 @@
+.landingHeader {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6px;
+  z-index: 40;
+  color: white;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.logoContainer {
+  width: 100%;
+  padding-left: 100px;
+}
+
+.rightNav {
+  display: flex;;
+  width: 100%;
+  justify-content: end;
+  padding-right: 85px;
+  filter: invert(100%);
+}
+
+.pageLogo {
+  height: 75px;
+  width: auto;
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+.navIcon {
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+}
