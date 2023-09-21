@@ -1,0 +1,395 @@
+{
+    "count": 79066,
+    "results": [
+        {
+            "id": "288ee5b1-71af-45ad-baad-c794c245f7fa",
+            "brand": "Nike",
+            "colorway": "Black/Black/University Gold",
+            "estimatedMarketValue": 995,
+            "gender": "men",
+            "image": {
+                "360": [],
+                "original": "https://image.goat.com/attachments/product_template_pictures/images/093/274/350/original/FQ3544_001.png.png",
+                "small": "https://image.goat.com/750/attachments/product_template_pictures/images/093/274/350/original/FQ3544_001.png.png",
+                "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/093/274/350/original/FQ3544_001.png.png"
+            },
+            "links": {
+                "stockX": "",
+                "goat": "https://goat.com/sneakers/zoom-kobe-4-protro-black-mamba-fq3544-001",
+                "flightClub": "https://flightclub.com/zoom-kobe-4-protro-black-mamba-fq3544-001",
+                "stadiumGoods": ""
+            },
+            "name": "Zoom Kobe 4 Protro 'Black Mamba'",
+            "releaseDate": "2023-12-26",
+            "releaseYear": "2023",
+            "retailPrice": 180,
+            "silhouette": "Zoom Kobe 4",
+            "sku": "FQ3544-001",
+            "story": "The Nike Zoom Kobe 4 Protro ‘Black Mamba’ sports a black nubuck upper with a scaly snakeskin texture throughout the collar, forefoot overlay and Swoosh. Kobe’s signature is scrawled in yellow on the lateral side of the TPU heel counter, delivering the shoe’s lone pop of color. Lightweight cushioning arrives via a matching black Phylon midsole, featuring a large-volume Zoom Air unit in forefoot for on-court responsiveness."
+        },
+        {
+            "id": "dc472ed2-f6dd-492d-8b60-1d418e9e6ac3",
+            "brand": "Nike",
+            "colorway": "Vibrant Yellow/Photo Blue-Team Orange",
+            "estimatedMarketValue": 130,
+            "gender": "men",
+            "image": {
+                "360": [],
+                "original": "[]",
+                "small": "false",
+                "thumbnail": "[]"
+            },
+            "links": {
+                "stockX": "https://stockx.com/nike-kd-3-retro-christmas-2023",
+                "goat": "",
+                "flightClub": "",
+                "stadiumGoods": ""
+            },
+            "name": "Nike KD 3 Retro Christmas (2023)",
+            "releaseDate": "2023-12-23",
+            "releaseYear": "2023",
+            "retailPrice": 130,
+            "silhouette": "Nike KD 3 Retro",
+            "sku": "FD5606-700",
+            "story": ""
+        },
+        {
+            "id": "62e33ae3-19f0-4adc-900e-c95e4f26d2d8",
+            "brand": "Nike",
+            "colorway": "Bright Crimson/Black/Electric Green",
+            "estimatedMarketValue": 125,
+            "gender": "youth",
+            "image": {
+                "360": [],
+                "original": "https://image.goat.com/attachments/product_template_pictures/images/092/725/167/original/FV9676_600.png.png",
+                "small": "https://image.goat.com/750/attachments/product_template_pictures/images/092/725/167/original/FV9676_600.png.png",
+                "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/092/725/167/original/FV9676_600.png.png"
+            },
+            "links": {
+                "stockX": "",
+                "goat": "https://goat.com/sneakers/zoom-kobe-6-protro-gs-reverse-grinch-fv9676-600",
+                "flightClub": "https://flightclub.com/zoom-kobe-6-protro-gs-reverse-grinch-fv9676-600",
+                "stadiumGoods": ""
+            },
+            "name": "Zoom Kobe 6 Protro GS 'Reverse Grinch'",
+            "releaseDate": "2023-12-16",
+            "releaseYear": "2023",
+            "retailPrice": 125,
+            "silhouette": "Zoom Kobe 6",
+            "sku": "FV9676-600",
+            "story": ""
+        },
+        {
+            "id": "b3ac74d2-3915-402a-b468-5237608b3aab",
+            "brand": "Nike",
+            "colorway": "Bright Crimson/Black/Electric Green",
+            "estimatedMarketValue": 875,
+            "gender": "men",
+            "image": {
+                "360": [],
+                "original": "https://image.goat.com/attachments/product_template_pictures/images/091/996/562/original/FV4921_600.png.png",
+                "small": "https://image.goat.com/750/attachments/product_template_pictures/images/091/996/562/original/FV4921_600.png.png",
+                "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/091/996/562/original/FV4921_600.png.png"
+            },
+            "links": {
+                "stockX": "https://stockx.com/nike-kobe-6-protro-reverse-grinch",
+                "goat": "https://goat.com/sneakers/zoom-kobe-6-protro-reverse-grinch-fv4921-600",
+                "flightClub": "https://flightclub.com/zoom-kobe-6-protro-reverse-grinch-fv4921-600",
+                "stadiumGoods": ""
+            },
+            "name": "Nike Kobe 6 Protro Reverse Grinch",
+            "releaseDate": "2023-12-16",
+            "releaseYear": "2023",
+            "retailPrice": 180,
+            "silhouette": "Zoom Kobe 6",
+            "sku": "FV4921-600",
+            "story": "The Nike Zoom Kobe 6 Protro ‘Reverse Grinch’ delivers a color-flipped version of the iconic ‘Grinch’ colorway from 2010. A bright crimson hue is executed on the scaly micro-mesh upper, secured with neon green laces and accented with a contrasting black Swoosh. A padded low-cut collar allows for a full range of motion, while a molded TPU heel counter provides rearfoot stability. The sneaker sits on a lightweight Cushlon midsole with a springy Zoom Air unit nestled in the forefoot."
+        },
+        {
+            "id": "993d1459-cbb8-4685-85c3-7b6abcb7c9b5",
+            "brand": "Nike",
+            "colorway": "Black/Picante Red/Iron Grey/Summit White",
+            "estimatedMarketValue": 160,
+            "gender": "men",
+            "image": {
+                "360": [],
+                "original": "https://image.goat.com/attachments/product_template_pictures/images/092/680/096/original/FB9149_001.png.png",
+                "small": "https://image.goat.com/750/attachments/product_template_pictures/images/092/680/096/original/FB9149_001.png.png",
+                "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/092/680/096/original/FB9149_001.png.png"
+            },
+            "links": {
+                "stockX": "",
+                "goat": "https://goat.com/sneakers/air-zoom-vomero-5-black-picante-red-fb9149-001",
+                "flightClub": "",
+                "stadiumGoods": ""
+            },
+            "name": "Air Zoom Vomero 5 'Black Picante Red'",
+            "releaseDate": "2023-12-15",
+            "releaseYear": "2023",
+            "retailPrice": 160,
+            "silhouette": "Air Zoom Vomero 5",
+            "sku": "FB9149-001",
+            "story": ""
+        },
+        {
+            "id": "0adb252f-ee09-4ff8-ae4b-71a0fb150c96",
+            "brand": "Nike",
+            "colorway": "Mean Green/Black/Lotus Pink",
+            "estimatedMarketValue": 1099,
+            "gender": "men",
+            "image": {
+                "360": [],
+                "original": "https://image.goat.com/attachments/product_template_pictures/images/093/274/359/original/FZ8319_300.png.png",
+                "small": "https://image.goat.com/750/attachments/product_template_pictures/images/093/274/359/original/FZ8319_300.png.png",
+                "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/093/274/359/original/FZ8319_300.png.png"
+            },
+            "links": {
+                "stockX": "",
+                "goat": "https://goat.com/sneakers/the-powerpuff-girls-x-dunk-low-pro-sb-qs-buttercup-fz8319-300",
+                "flightClub": "https://flightclub.com/the-powerpuff-girls-x-dunk-low-pro-sb-qs-buttercup-fz8319-300",
+                "stadiumGoods": ""
+            },
+            "name": "The Powerpuff Girls x Dunk Low Pro SB QS 'Buttercup'",
+            "releaseDate": "2023-12-14",
+            "releaseYear": "2023",
+            "retailPrice": 135,
+            "silhouette": "Dunk SB",
+            "sku": "FZ8319-300",
+            "story": ""
+        },
+        {
+            "id": "1cf37c89-d992-4f18-b527-0934397d8d0b",
+            "brand": "Nike",
+            "colorway": "Blue Chill/Deep Royal Blue/Active Pink",
+            "estimatedMarketValue": 75,
+            "gender": "infant",
+            "image": {
+                "360": [],
+                "original": "",
+                "small": "",
+                "thumbnail": ""
+            },
+            "links": {
+                "stockX": "",
+                "goat": "https://goat.com/sneakers/the-powerpuff-girls-x-dunk-low-pro-sb-qs-td-bubbles-fz8830-400",
+                "flightClub": "https://flightclub.com/the-powerpuff-girls-x-dunk-low-pro-sb-qs-td-bubbles-fz8830-400",
+                "stadiumGoods": ""
+            },
+            "name": "The Powerpuff Girls x Dunk Low Pro SB QS TD 'Bubbles'",
+            "releaseDate": "2023-12-14",
+            "releaseYear": "2023",
+            "retailPrice": 75,
+            "silhouette": "Dunk SB",
+            "sku": "FZ8830-400",
+            "story": ""
+        },
+        {
+            "id": "241db403-9db2-4fd0-b7bd-d92e7ce1d4c3",
+            "brand": "Nike",
+            "colorway": "Black/Black/Multi/Color/Picante Red/Anthracite",
+            "estimatedMarketValue": 180,
+            "gender": "men",
+            "image": {
+                "360": [],
+                "original": "",
+                "small": "",
+                "thumbnail": ""
+            },
+            "links": {
+                "stockX": "",
+                "goat": "https://goat.com/sneakers/air-zoom-gt-hustle-2-greater-than-ever-fv4137-001",
+                "flightClub": "",
+                "stadiumGoods": ""
+            },
+            "name": "Air Zoom GT Hustle 2 'Greater Than Ever'",
+            "releaseDate": "2023-12-14",
+            "releaseYear": "2023",
+            "retailPrice": 180,
+            "silhouette": "Air Zoom GT Hustle 2",
+            "sku": "FV4137-001",
+            "story": ""
+        },
+        {
+            "id": "39d8c693-e254-42da-a12a-9e95585b4e6a",
+            "brand": "Nike",
+            "colorway": "Black/Black/Multi/Color/Picante Red/Anthracite",
+            "estimatedMarketValue": 180,
+            "gender": "men",
+            "image": {
+                "360": [],
+                "original": "",
+                "small": "",
+                "thumbnail": ""
+            },
+            "links": {
+                "stockX": "",
+                "goat": "https://goat.com/sneakers/air-zoom-gt-cut-2-greater-than-ever-fv4145-001",
+                "flightClub": "",
+                "stadiumGoods": ""
+            },
+            "name": "Air Zoom GT Cut 2 'Greater Than Ever'",
+            "releaseDate": "2023-12-14",
+            "releaseYear": "2023",
+            "retailPrice": 180,
+            "silhouette": "Air Zoom GT Cut 2",
+            "sku": "FV4145-001",
+            "story": ""
+        },
+        {
+            "id": "44e20da9-eac6-4457-8370-e0622c64cdab",
+            "brand": "Nike",
+            "colorway": "Lotus Pink/Digital Pink/Medium Soft Pink",
+            "estimatedMarketValue": 90,
+            "gender": "youth",
+            "image": {
+                "360": [],
+                "original": "",
+                "small": "",
+                "thumbnail": ""
+            },
+            "links": {
+                "stockX": "",
+                "goat": "https://goat.com/sneakers/the-powerpuff-girls-x-dunk-low-pro-sb-qs-ps-blossom-fz3351-600",
+                "flightClub": "https://flightclub.com/the-powerpuff-girls-x-dunk-low-pro-sb-qs-ps-blossom-fz3351-600",
+                "stadiumGoods": ""
+            },
+            "name": "The Powerpuff Girls x Dunk Low Pro SB QS PS 'Blossom'",
+            "releaseDate": "2023-12-14",
+            "releaseYear": "2023",
+            "retailPrice": 90,
+            "silhouette": "Dunk SB",
+            "sku": "FZ3351-600",
+            "story": ""
+        },
+        {
+            "id": "64012eda-6357-443d-be3f-696683dede1a",
+            "brand": "Nike",
+            "colorway": "Mean Green/Black/Lotus Pink",
+            "estimatedMarketValue": 90,
+            "gender": "youth",
+            "image": {
+                "360": [],
+                "original": "",
+                "small": "",
+                "thumbnail": ""
+            },
+            "links": {
+                "stockX": "",
+                "goat": "https://goat.com/sneakers/the-powerpuff-girls-x-dunk-low-pro-sb-qs-ps-buttercup-fz8832-300",
+                "flightClub": "https://flightclub.com/the-powerpuff-girls-x-dunk-low-pro-sb-qs-ps-buttercup-fz8832-300",
+                "stadiumGoods": ""
+            },
+            "name": "The Powerpuff Girls x Dunk Low Pro SB QS PS 'Buttercup'",
+            "releaseDate": "2023-12-14",
+            "releaseYear": "2023",
+            "retailPrice": 90,
+            "silhouette": "Dunk SB",
+            "sku": "FZ8832-300",
+            "story": ""
+        },
+        {
+            "id": "7b4dec1f-4c59-4a73-882d-6623009630c4",
+            "brand": "Nike",
+            "colorway": "Lotus Pink/Digital Pink/Medium Soft Pink",
+            "estimatedMarketValue": 75,
+            "gender": "infant",
+            "image": {
+                "360": [],
+                "original": "",
+                "small": "",
+                "thumbnail": ""
+            },
+            "links": {
+                "stockX": "",
+                "goat": "https://goat.com/sneakers/the-powerpuff-girls-x-dunk-low-pro-sb-qs-td-blossom-fz3352-600",
+                "flightClub": "https://flightclub.com/the-powerpuff-girls-x-dunk-low-pro-sb-qs-td-blossom-fz3352-600",
+                "stadiumGoods": ""
+            },
+            "name": "The Powerpuff Girls x Dunk Low Pro SB QS TD 'Blossom'",
+            "releaseDate": "2023-12-14",
+            "releaseYear": "2023",
+            "retailPrice": 75,
+            "silhouette": "Dunk SB",
+            "sku": "FZ3352-600",
+            "story": ""
+        },
+        {
+            "id": "8d3b97af-4692-4b5d-8fa2-cb98db19045c",
+            "brand": "Nike",
+            "colorway": "Blue Chill/Deep Royal Blue/Active Pink",
+            "estimatedMarketValue": 1120,
+            "gender": "men",
+            "image": {
+                "360": [],
+                "original": "https://image.goat.com/attachments/product_template_pictures/images/093/274/361/original/FZ8320_400.png.png",
+                "small": "https://image.goat.com/750/attachments/product_template_pictures/images/093/274/361/original/FZ8320_400.png.png",
+                "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/093/274/361/original/FZ8320_400.png.png"
+            },
+            "links": {
+                "stockX": "",
+                "goat": "https://goat.com/sneakers/the-powerpuff-girls-x-dunk-low-pro-sb-qs-bubbles-fz8320-400",
+                "flightClub": "https://flightclub.com/the-powerpuff-girls-x-dunk-low-pro-sb-qs-bubbles-fz8320-400",
+                "stadiumGoods": ""
+            },
+            "name": "The Powerpuff Girls x Dunk Low Pro SB QS 'Bubbles'",
+            "releaseDate": "2023-12-14",
+            "releaseYear": "2023",
+            "retailPrice": 135,
+            "silhouette": "Dunk SB",
+            "sku": "FZ8320-400",
+            "story": ""
+        },
+        {
+            "id": "dd273522-f803-45d3-811b-27e5d43ef556",
+            "brand": "Nike",
+            "colorway": "Lotus Pink/Digital Pink/Medium Soft Pink",
+            "estimatedMarketValue": 998,
+            "gender": "men",
+            "image": {
+                "360": [],
+                "original": "https://image.goat.com/attachments/product_template_pictures/images/092/765/953/original/FD2631_600.png.png",
+                "small": "https://image.goat.com/750/attachments/product_template_pictures/images/092/765/953/original/FD2631_600.png.png",
+                "thumbnail": "https://image.goat.com/375/attachments/product_template_pictures/images/092/765/953/original/FD2631_600.png.png"
+            },
+            "links": {
+                "stockX": "",
+                "goat": "https://goat.com/sneakers/the-powerpuff-girls-x-dunk-low-pro-sb-qs-blossom-fd2631-600",
+                "flightClub": "https://flightclub.com/the-powerpuff-girls-x-dunk-low-pro-sb-qs-blossom-fd2631-600",
+                "stadiumGoods": ""
+            },
+            "name": "The Powerpuff Girls x Dunk Low Pro SB QS 'Blossom'",
+            "releaseDate": "2023-12-14",
+            "releaseYear": "2023",
+            "retailPrice": 135,
+            "silhouette": "Dunk SB",
+            "sku": "FD2631-600",
+            "story": ""
+        },
+        {
+            "id": "e77041d5-5f7f-4756-bb55-fcc4de0104bb",
+            "brand": "Nike",
+            "colorway": "Mean Green/Black/Lotus Pink",
+            "estimatedMarketValue": 75,
+            "gender": "infant",
+            "image": {
+                "360": [],
+                "original": "",
+                "small": "",
+                "thumbnail": ""
+            },
+            "links": {
+                "stockX": "",
+                "goat": "https://goat.com/sneakers/the-powerpuff-girls-x-dunk-low-pro-sb-qs-td-buttercup-fz8831-300",
+                "flightClub": "https://flightclub.com/the-powerpuff-girls-x-dunk-low-pro-sb-qs-td-buttercup-fz8831-300",
+                "stadiumGoods": ""
+            },
+            "name": "The Powerpuff Girls x Dunk Low Pro SB QS TD 'Buttercup'",
+            "releaseDate": "2023-12-14",
+            "releaseYear": "2023",
+            "retailPrice": 75,
+            "silhouette": "Dunk SB",
+            "sku": "FZ8831-300",
+            "story": ""
+        }
+    ]
+}

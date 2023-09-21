@@ -1,0 +1,23 @@
+.mainButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 150px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.452);
+    color: #fff;
+    backdrop-filter: blur(8px);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.mainButton:hover {
+    transform: scale(1.05);
+}
+

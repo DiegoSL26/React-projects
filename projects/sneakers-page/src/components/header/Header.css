@@ -1,23 +1,44 @@
 .landingHeader {
-  position: fixed;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 6px;
   z-index: 40;
   color: white;
   width: 100%;
+  transition-delay: .5s;
+  transition: background-color 0.5s ease;
+  font-size: 16px;
 }
 
-ul {
+.landingHeaderScroll {
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  color: white;
+  width: 100%;
+  transition: background-color 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.452);
+  backdrop-filter: blur(5px);
+  border-bottom: 2px solid #000;
+}
+
+.leftHeaderNav ul {
   display: flex;
 }
 
-li {
+.leftHeaderNav li {
   padding-left: 15px;
   padding-right: 15px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.leftHeaderNav li:hover{
+  transform: scale(1.15);
+  text-decoration: underline;
 }
 
 .logoContainer {
@@ -25,7 +46,7 @@ li {
   padding-left: 100px;
 }
 
-.rightNav {
+.rightHeaderNav {
   display: flex;;
   width: 100%;
   justify-content: end;
@@ -38,6 +59,11 @@ li {
   width: auto;
   cursor: pointer;
   filter: invert(100%);
+  transition: transform 0.3s ease;
+}
+
+.pageLogo:hover {
+  transform: scale(1.15);
 }
 
 .navIcon {
@@ -46,4 +72,9 @@ li {
   cursor: pointer;
   padding-left: 15px;
   padding-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.navIcon:hover{
+  transform: scale(1.15);
 }
