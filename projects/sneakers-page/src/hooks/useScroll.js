@@ -6,7 +6,7 @@ export const UseScroll = () => {
   const sliderDiv = useRef(null)
   const [isAtTop, setIsAtTop] = useState(true)
 
-  const handleScrollClick = () => {
+  const handleScrollClickBottom = () => {
     if (sliderRef.current) {
       setIsScrolling(true)
       sliderRef.current.scrollIntoView({ behavior: 'smooth' })
@@ -24,5 +24,5 @@ export const UseScroll = () => {
     }
   }
 
-  return { isAtTop, sliderRef, sliderDiv, handleScrollClick, handleScroll }
+  return { isAtTop, sliderRef, sliderDiv, handleScrollClickBottom, handleScroll }
 }

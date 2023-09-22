@@ -9,7 +9,8 @@
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.452);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #000;
     color: #fff;
     backdrop-filter: blur(8px);
     text-decoration: none;

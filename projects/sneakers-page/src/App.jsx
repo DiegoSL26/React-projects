@@ -5,22 +5,23 @@ import { ImageContainer } from './components/imageSection/ImageSection'
 import { UseScroll } from './hooks/useScroll'
 import { HeaderDropdownMenu } from './components/headerDropdownMenu/HeaderDropdownMenu'
 import { getSneakers } from './services/getSneakers'
+import { useHover } from './hooks/useHover'
 
 function App () {
-  const { isAtTop, sliderRef, sliderDiv, handleScrollClick, handleScroll } = UseScroll()
+  const { isAtTop, sliderRef, sliderDiv, handleScrollClickBottom, handleScroll } = UseScroll()
+  const { isHovered, hoverRef, hoverDropDownRef } = useHover()
   const sneakers = getSneakers()
 
   return (
     <main>
-
       <div className='headerContainer'>
-        <Header isAtTop={isAtTop} />
-        <HeaderDropdownMenu sneakers={sneakers} />
+        <Header isAtTop={isAtTop} isHovered={isHovered} hoverRef={hoverRef} />
+        <HeaderDropdownMenu sneakers={sneakers} isHovered={isHovered} hoverDropDownRef={hoverDropDownRef} />
       </div>
 
       <div className='slider' onScroll={handleScroll} ref={sliderDiv}>
         <div>
-          <VideoSection handleScrollClick={handleScrollClick} />
+          <VideoSection handleScrollClick={handleScrollClickBottom} />
         </div>
         <div ref={sliderRef}>
           <ImageContainer imageRoute='./src/assets/bad-bunny-brown-forum.jpg' />
@@ -32,6 +33,8 @@ function App () {
           <ImageContainer imageRoute='./src/assets/stan-smith.jpg' />
         </div>
       </div>
+
+      <div className='backdropBlur' />
     </main>
   )
 }

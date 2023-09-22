@@ -1,30 +1,45 @@
-.dropDownContainer {
+.showDropDownContainer {
     width: 100%;
+    max-height: 500px;
     z-index: 40;
     overflow-y: hidden;
-    display: none;
+    display: block;
+    transition: max-height 0.5s ease;
 }
 
-.dropDownContainer ul {
+.showDropDownContainer ul {
     margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.452);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
     border-bottom: 2px solid #000;
+    gap: 10px;
 }
 
 .sneakerInfo {
     display: flex;
     flex-direction: column;
     text-align: center;
+    cursor: pointer;
 }
 
 .sneakerInfo a{
+    font-size: 16px;
     width: auto;
     margin: auto;
     color: white;
     text-decoration: none;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
+}
+
+.sneakerInfo img {
+    height: auto;
+    margin: auto;
+}
+
+.sneakerInfo:hover {
+    transform: scale(1.05);
+    background-color: rgba(202, 202, 202, 0.514);
 }

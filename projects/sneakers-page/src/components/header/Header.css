@@ -5,6 +5,7 @@
   align-items: center;
   z-index: 40;
   color: white;
+  height: 100%;
   width: 100%;
   transition-delay: .5s;
   transition: background-color 0.5s ease;
@@ -18,22 +19,48 @@
   align-items: center;
   z-index: 40;
   color: white;
+  height: 100%;
   width: 100%;
   transition: background-color 0.5s ease;
-  background-color: rgba(0, 0, 0, 0.452);
-  backdrop-filter: blur(5px);
-  border-bottom: 2px solid #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 3px solid black;
+}
+
+.navHeaderHovered {
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  color: white;
+  height: 100%;
+  width: 100%;
+  transition: background-color 0.5s ease;
+  background-color: rgba(0, 0, 0);
+  backdrop-filter: blur(10px);
+}
+
+.leftHeaderNav {
+  height: 82px;
 }
 
 .leftHeaderNav ul {
+  height: 100%;
   display: flex;
+  margin: 0;
+  align-items: center;
+  cursor: pointer;
 }
 
 .leftHeaderNav li {
-  padding-left: 15px;
-  padding-right: 15px;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
   transition: transform 0.3s ease;
+  
 }
 
 .leftHeaderNav li:hover{
@@ -52,6 +79,16 @@
   justify-content: end;
   padding-right: 85px;
   filter: invert(100%);
+}
+
+.searchBarHeader {
+  background-color: white;
+  color: black;
+  filter: invert(100%);
+  margin-right: 10px;
+  border-radius: 10px;
+  padding-left: 15px;
+  border: 1px solid black;
 }
 
 .pageLogo {
