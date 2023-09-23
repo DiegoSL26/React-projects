@@ -13,8 +13,6 @@ export function useHover () {
     dropDownItem.addEventListener('mouseover', () => setIsHovered(true))
     dropDownItem.addEventListener('mouseout', () => setIsHovered(false))
 
-    console.log(isHovered)
-
     return () => {
       navItem.removeEventListener('mouseover', () => setIsHovered(true))
       navItem.removeEventListener('mouseout', () => setIsHovered(false))
