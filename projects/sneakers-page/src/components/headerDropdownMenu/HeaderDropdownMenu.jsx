@@ -10,15 +10,32 @@ export function HeaderDropdownMenu ({ sneakers, isHovered, hoverDropDownRef }) {
   // TODO 4: Add a condition to disable the right arrow button when the last four sneakers are being shown (the limit will be 15)
   // TODO 5: Add a final button in the 16 position that says 'Ir al catálogo completo' and links to the catalog page
 
+  const handleRightArrow = () => {
+    sneakersIndex >= 15 ? setSneakersIndex(15) : setSneakersIndex(sneakersIndex + 4)
+    console.log(sneakersIndex)
+  }
+
+  const handleLeftArrow = () => {
+    sneakersIndex <= 3 ? setSneakersIndex(0) : setSneakersIndex(sneakersIndex - 4)
+    console.log(sneakersIndex)
+  }
+
   useEffect(() => {
-    isHovered ? hoverDropDownRef.current.style.maxHeight = '500px' : hoverDropDownRef.current.style.maxHeight = '0px'
+    if (isHovered) {
+      hoverDropDownRef.current.style.maxHeight = '500px'
+      hoverDropDownRef.current.style.borderBottom = '2px solid #000'
+    } else {
+      hoverDropDownRef.current.style.maxHeight = '0px'
+      hoverDropDownRef.current.style.borderBottom = 'none'
+    }
   }, [isHovered])
 
   return (
     <div ref={hoverDropDownRef} className='showDropDownContainer'>
-      <div>
-        <button onClick={() => setSneakersIndex(sneakersIndex + 1)}>Ver más</button>
+      <div className='arrowButtonContainer'>
+        <button onClick={handleLeftArrow}>Izquierda</button>
       </div>
+
       <ul>
         {sneakers.slice(sneakersIndex, sneakersIndex + 4).map(sneaker => (
           <li key={sneaker.id} className='sneakerInfo'>
@@ -28,6 +45,10 @@ export function HeaderDropdownMenu ({ sneakers, isHovered, hoverDropDownRef }) {
           </li>
         ))}
       </ul>
+
+      <div className='arrowButtonContainer'>
+        <button onClick={handleRightArrow}>Derecha</button>
+      </div>
     </div>
   )
 }

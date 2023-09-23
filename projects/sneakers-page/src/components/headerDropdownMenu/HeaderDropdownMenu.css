@@ -3,8 +3,13 @@
     max-height: 500px;
     z-index: 40;
     overflow-y: hidden;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     transition: max-height 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #000;
+    backdrop-filter: blur(10px);
 }
 
 .showDropDownContainer ul {
@@ -12,9 +17,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid #000;
     gap: 10px;
 }
 
@@ -42,4 +44,10 @@
 .sneakerInfo:hover {
     transform: scale(1.05);
     background-color: rgba(202, 202, 202, 0.514);
+}
+
+.arrowButtonContainer {
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
 }
