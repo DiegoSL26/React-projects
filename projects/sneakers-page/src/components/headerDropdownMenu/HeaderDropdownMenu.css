@@ -1,6 +1,6 @@
-.showDropDownContainer {
+.showDropdownContainer {
     width: 100%;
-    max-height: 500px;
+    height: 500px;
     z-index: 40;
     overflow-y: hidden;
     display: flex;
@@ -12,42 +12,33 @@
     backdrop-filter: blur(10px);
 }
 
-.showDropDownContainer ul {
-    margin: 0;
+.sneakerSlider {
     display: flex;
     flex-direction: row;
+    height: 100%;
+    width: 80%;
+    scroll-snap-type: x mandatory;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.sneakerDropdownContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    scroll-snap-align: start;
+}
+
+.rightArrowButtonContainer {
+    display: flex;
     justify-content: center;
-    gap: 10px;
-}
-
-.sneakerInfo {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    cursor: pointer;
-}
-
-.sneakerInfo a{
-    font-size: 16px;
-    width: auto;
-    margin: auto;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 50px;
-}
-
-.sneakerInfo img {
-    height: auto;
-    margin: auto;
-}
-
-.sneakerInfo:hover {
-    transform: scale(1.05);
-    background-color: rgba(202, 202, 202, 0.514);
-}
-
-.arrowButtonContainer {
-    margin: 0 40px;
-    display: flex;
     align-items: center;
+    width: 10%;
+}
+
+.leftArrowButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
 }
