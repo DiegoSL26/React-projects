@@ -9,6 +9,8 @@ Se utilizan diferentes Hooks como:
 
 Además, se implementan distintas animaciones en CSS, así como tambien propiedades como scroll-snap para el manejo del scroll y darle estética a la página.
 
+
+
 Sneaker sales store.
 
 In this project made in React you can see the landing page of a page to sell sneakers using simulated information extracted from a freemium API (with a request limit, that is why the data is not fetched and simulated information is used).
