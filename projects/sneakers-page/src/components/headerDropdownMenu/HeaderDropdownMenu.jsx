@@ -4,8 +4,6 @@ import { SneakerDropdownPage } from '../sneakerDropdownPage/SneakerDropdownPage'
 import { useDropdownScroll } from '../../hooks/useDropdownScroll'
 
 export function HeaderDropdownMenu ({ sneakers, isHovered, hoverDropDownRef }) {
-  // TODO 5: Add a final button in the 16 position that says 'Ir al catálogo completo' and links to the catalog page
-
   const { dropdownScrollRef, handleRightClick, handleLeftClick, leftArrowRef, rightArrowRef } = useDropdownScroll()
 
   useEffect(() => {
