@@ -1,6 +1,8 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 export const useDropdownScroll = () => {
+  const leftArrowRef = useRef()
+  const rightArrowRef = useRef()
   const [currentPage, setCurrentPage] = useState(0)
   const dropdownScrollRef = [
     useRef(),
@@ -8,6 +10,19 @@ export const useDropdownScroll = () => {
     useRef(),
     useRef()
   ]
+
+  useEffect(() => {
+    if (currentPage === 0) {
+      leftArrowRef.current.style.visibility = 'hidden'
+    } else {
+      leftArrowRef.current.style.visibility = 'visible'
+    }
+    if (currentPage === dropdownScrollRef.length - 1) {
+      rightArrowRef.current.style.visibility = 'hidden'
+    } else {
+      rightArrowRef.current.style.visibility = 'visible'
+    }
+  }, [currentPage])
 
   const handleRightClick = () => {
     if (currentPage === dropdownScrollRef.length - 1) return
@@ -25,5 +40,5 @@ export const useDropdownScroll = () => {
     console.log(currentPage)
   }
 
-  return { dropdownScrollRef, handleRightClick, handleLeftClick }
+  return { dropdownScrollRef, handleRightClick, handleLeftClick, leftArrowRef, rightArrowRef }
 }

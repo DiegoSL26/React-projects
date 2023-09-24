@@ -24,9 +24,8 @@ export function Header ({ isAtTop, hoverRef, isHovered }) {
         <img className='pageLogo' src='https://cdn.freebiesupply.com/images/large/2x/air-jordan-logo-png-transparent.png' alt='Jordan logo vector' />
       </div>
       <nav className='leftHeaderNav'>
-        <ul ref={hoverRef}>
-          <li><a href='#' />Catálogo</li>
-          <li><a href='#' />Modelos</li>
+        <ul>
+          <li ref={hoverRef}><a href='#' />Catálogo</li>
           <li><a href='#' />Hombre</li>
           <li><a href='#' />Mujer</li>
           <li><a href='#' />Niños</li>

@@ -42,3 +42,15 @@
     align-items: center;
     width: 10%;
 }
+
+.rightArrowButtonContainer img {
+    transform: rotate(270deg);
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.leftArrowButtonContainer img {
+    transform: rotate(90deg);
+    filter: invert(100%);
+    cursor: pointer;
+}
