@@ -5,7 +5,7 @@ export function ImageContainer ({ imageRoute }) {
   return (
     <section className='imgContainer'>
       <div className='imgSection'>
-        <img src={imageRoute} alt='Bad Bunny Forum image' />
+        <img src={imageRoute} alt='Sneaker Img' />
       </div>
       <footer className='footerImgSection'>
         <ul>
