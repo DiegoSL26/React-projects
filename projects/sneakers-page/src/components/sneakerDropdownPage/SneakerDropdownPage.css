@@ -18,17 +18,6 @@
     margin-right: 10px;
 }
 
-.sneakerInfo a{
-    font-size: 16px;
-    width: auto;
-    color: white;
-    text-decoration: none;
-    margin-top: 0;
-    margin-left: 25px;
-    margin-right: 25px;
-    white-space: normal;
-}
-
 .sneakerInfo img {
     height: 375px;
     width: 375px;
@@ -48,18 +37,16 @@
     transition: all 0.5s ease;
     width: 25%;
     margin-right: 10px;
-    background-color: rgba(37, 37, 37, 0.514);
 }
 
-.catalogueInfo a {
+a {
     font-size: 16px;
     width: auto;
     color: white;
     text-decoration: none;
     margin-top: 0;
-    margin-left: 25px;
-    margin-right: 25px;
     white-space: normal;
+    height: 100%;
 }
 
 .catalogueInfo img {

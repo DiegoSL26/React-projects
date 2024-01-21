@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import './header.css'
+import { Link } from 'react-router-dom'
 
 export function Header ({ isAtTop, hoverRef, isHovered }) {
   const headerRef = useRef(null)
@@ -25,10 +26,10 @@ export function Header ({ isAtTop, hoverRef, isHovered }) {
       </div>
       <nav className='leftHeaderNav'>
         <ul>
-          <li ref={hoverRef}><a href='#' />Catálogo</li>
-          <li><a href='#' />Hombre</li>
-          <li><a href='#' />Mujer</li>
-          <li><a href='#' />Niños</li>
+          <li ref={hoverRef}><Link to='/catalogue'>Catálogo</Link></li>
+          <li><Link to='/catalogue'>Hombre</Link></li>
+          <li><Link to='/catalogue'>Mujer</Link></li>
+          <li><Link to='/catalogue'>Niños</Link></li>
         </ul>
       </nav>
       <nav className='rightHeaderNav'>

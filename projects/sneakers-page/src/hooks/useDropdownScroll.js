@@ -29,7 +29,6 @@ export const useDropdownScroll = () => {
 
     setCurrentPage(currentPage + 1)
     dropdownScrollRef[currentPage + 1].current.scrollIntoView({ behavior: 'smooth' })
-    console.log(currentPage)
   }
 
   const handleLeftClick = () => {
@@ -37,7 +36,6 @@ export const useDropdownScroll = () => {
 
     setCurrentPage(currentPage - 1)
     dropdownScrollRef[currentPage - 1].current.scrollIntoView({ behavior: 'smooth' })
-    console.log(currentPage)
   }
 
   return { dropdownScrollRef, handleRightClick, handleLeftClick, leftArrowRef, rightArrowRef }

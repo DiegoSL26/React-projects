@@ -25,15 +25,14 @@
   display: flex;
   margin: 0;
   align-items: center;
-  cursor: pointer;
+  gap: 50px;
 }
 
 .leftHeaderNav li {
+  cursor: pointer;
   display: flex;
   align-items: center;
   height: 100%;
-  padding-left: 25px;
-  padding-right: 25px;
   transition: transform 0.3s ease;
   
 }
@@ -41,6 +40,15 @@
 .leftHeaderNav li:hover{
   transform: scale(1.15);
   text-decoration: underline;
+}
+
+.leftHeaderNav li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  height: 100%;
 }
 
 .logoContainer {

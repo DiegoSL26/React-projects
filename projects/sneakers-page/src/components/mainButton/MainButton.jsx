@@ -1,9 +1,12 @@
+import { Link } from 'react-router-dom'
 import './MainButton.css'
 
-export function MainButton ({ buttonText }) {
+export function MainButton ({ buttonText, route }) {
   return (
-    <div className='mainButton'>
-      <a href='#' />{buttonText}
-    </div>
+    <Link to={route}>
+      <button className='mainButton'>
+        {buttonText}
+      </button>
+    </Link>
   )
 }
