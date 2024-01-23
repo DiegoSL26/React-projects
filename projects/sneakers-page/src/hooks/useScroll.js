@@ -4,7 +4,7 @@ export const UseScroll = () => {
   const [isScrolling, setIsScrolling] = useState(false)
   const sliderRef = useRef(null)
   const [isAtTop, setIsAtTop] = useState(true)
-  const videoRef = useRef(null)
+  const sliderDiv = useRef(null)
 
   const handleScrollClickBottom = () => {
     if (sliderRef.current) {
@@ -14,7 +14,7 @@ export const UseScroll = () => {
   }
 
   const handleScroll = () => {
-    if (videoRef.current.getBoundingClientRect().top === 0) {
+    if (sliderDiv.current.scrollTop < 500) {
       setIsAtTop(true)
     } else {
       setIsAtTop(false)
@@ -24,5 +24,5 @@ export const UseScroll = () => {
     }
   }
 
-  return { videoRef, isAtTop, sliderRef, handleScrollClickBottom, handleScroll }
+  return { isAtTop, sliderRef, sliderDiv, handleScrollClickBottom, handleScroll }
 }

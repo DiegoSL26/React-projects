@@ -47,10 +47,14 @@
     transform: rotate(270deg);
     filter: invert(100%);
     cursor: pointer;
+    height: 75px;
+    width: auto;
 }
 
 .leftArrowButtonContainer img {
     transform: rotate(90deg);
     filter: invert(100%);
     cursor: pointer;
+    height: 75px;
+    width: auto;
 }

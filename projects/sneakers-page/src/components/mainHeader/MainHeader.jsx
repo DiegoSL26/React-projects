@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import './header.css'
+import './MainHeader.css'
 import { Link } from 'react-router-dom'
 
 export function Header ({ isAtTop, hoverRef, isHovered }) {
@@ -22,7 +22,7 @@ export function Header ({ isAtTop, hoverRef, isHovered }) {
   return (
     <header className='landingHeader' ref={headerRef}>
       <div className='logoContainer'>
-        <img className='pageLogo' src='https://cdn.freebiesupply.com/images/large/2x/air-jordan-logo-png-transparent.png' alt='Jordan logo vector' />
+        <Link to='/'><img className='pageLogo' src='https://cdn.freebiesupply.com/images/large/2x/air-jordan-logo-png-transparent.png' alt='Jordan logo vector' /></Link>
       </div>
       <nav className='leftHeaderNav'>
         <ul>

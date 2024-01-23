@@ -19,7 +19,7 @@ export function HeaderDropdownMenu ({ sneakers, isHovered, hoverDropDownRef }) {
   return (
     <div ref={hoverDropDownRef} className='showDropdownContainer'>
       <div ref={leftArrowRef} className='leftArrowButtonContainer'>
-        <img className='downArrow' onClick={handleLeftClick} src='https://cdn-icons-png.flaticon.com/512/2985/2985149.png' />
+        <img onClick={handleLeftClick} src='https://cdn-icons-png.flaticon.com/512/2985/2985149.png' />
       </div>
 
       <div className='sneakerSlider'>
@@ -42,7 +42,7 @@ export function HeaderDropdownMenu ({ sneakers, isHovered, hoverDropDownRef }) {
       </div>
 
       <div ref={rightArrowRef} className='rightArrowButtonContainer'>
-        <img className='downArrow' onClick={handleRightClick} src='https://cdn-icons-png.flaticon.com/512/2985/2985149.png' />
+        <img onClick={handleRightClick} src='https://cdn-icons-png.flaticon.com/512/2985/2985149.png' />
       </div>
     </div>
   )
