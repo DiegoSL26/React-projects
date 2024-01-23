@@ -1,14 +1,14 @@
 import './Home.css'
-import { VideoSection } from '../components/videoSection/VideoSection'
-import { ImageContainer } from '../components/imageSection/ImageSection'
-import { UseScroll } from '../hooks/useScroll'
-import { Header } from '../components/mainHeader/MainHeader'
-import { HeaderDropdownMenu } from '../components/headerDropdownMenu/HeaderDropdownMenu'
-import { useHover } from '../hooks/useHover'
-import { getSneakers } from '../services/getSneakers'
+import { VideoSection } from '../../components/videoSection/VideoSection'
+import { ImageContainer } from '../../components/imageSection/ImageSection'
+import { UseScroll } from '../../hooks/useScroll'
+import { Header } from '../../components/mainHeader/MainHeader'
+import { HeaderDropdownMenu } from '../../components/headerDropdownMenu/HeaderDropdownMenu'
+import { useHover } from '../../hooks/useHover'
+import { getSneakers } from '../../services/getSneakers'
 
 function Home () {
-  const { sliderRef, isAtTop, sliderDiv, handleScrollClickBottom, handleScroll } = UseScroll()
+  const { videoRef, isAtTop, sliderDiv, handleScrollClickBottom, handleScroll } = UseScroll()
   const sneakers = getSneakers()
   const { isHovered, hoverRef, hoverDropDownRef } = useHover()
 
@@ -19,10 +19,10 @@ function Home () {
         <HeaderDropdownMenu sneakers={sneakers} isHovered={isHovered} hoverDropDownRef={hoverDropDownRef} />
       </header>
       <div className='slider' onScroll={handleScroll} ref={sliderDiv}>
-        <div>
+        <div ref={videoRef}>
           <VideoSection handleScrollClick={handleScrollClickBottom} />
         </div>
-        <div ref={sliderRef}>
+        <div>
           <ImageContainer imageRoute='./src/assets/bad-bunny-brown-forum.jpg' />
         </div>
         <div>
