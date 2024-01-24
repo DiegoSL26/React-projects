@@ -8,7 +8,7 @@ import { useHover } from '../../hooks/useHover'
 import { getSneakers } from '../../services/getSneakers'
 
 function Home () {
-  const { videoRef, isAtTop, sliderDiv, handleScrollClickBottom, handleScroll } = UseScroll()
+  const { isAtTop, sliderRef, sliderDiv, videoRef, handleScrollClickBottom, handleScroll } = UseScroll()
   const sneakers = getSneakers()
   const { isHovered, hoverRef, hoverDropDownRef } = useHover()
 
@@ -18,11 +18,12 @@ function Home () {
         <Header isAtTop={isAtTop} isHovered={isHovered} hoverRef={hoverRef} />
         <HeaderDropdownMenu sneakers={sneakers} isHovered={isHovered} hoverDropDownRef={hoverDropDownRef} />
       </header>
+
       <div className='slider' onScroll={handleScroll} ref={sliderDiv}>
         <div ref={videoRef}>
           <VideoSection handleScrollClick={handleScrollClickBottom} />
         </div>
-        <div>
+        <div ref={sliderRef}>
           <ImageContainer imageRoute='./src/assets/bad-bunny-brown-forum.jpg' />
         </div>
         <div>

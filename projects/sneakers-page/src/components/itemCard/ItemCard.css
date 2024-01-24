@@ -1,0 +1,80 @@
+.card {
+    width: 295px;
+    height: 385px;
+    background: #ebeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+    box-shadow: #a8a8a8 5px 5px 5px 0px;
+  }
+  
+  .img {
+    scale: 0.60;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+  }
+
+  .link {
+    width: min-content;
+  }
+  
+  .textBox {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+    padding: 40px;
+  }
+  
+  .textBox > .text {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform:capitalize;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+  }
+  
+  .textBox > .head {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card:hover > .textBox {
+    opacity: 1;
+  }
+  
+  .card:hover > .img {
+    scale: 0.65;
+    filter: blur(7px);
+    animation: anim 3s infinite;
+  }
+  
+  @keyframes anim {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .card:hover {
+    transform: scale(1.04) rotate(-1deg);
+    cursor: pointer;
+    background-color: #616161; 
+  }

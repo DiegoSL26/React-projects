@@ -6,16 +6,18 @@
     padding: 32px 0;
     gap: 32px;
     justify-content: center;
-    margin: 32px 0 0 0;
-    padding: 1% 5%;
+    padding: 0 5%;
 }
 
 .filterSection {
     display: flex;
     flex-direction: column;
-    gap: 32px;
     height: min-content;
-    width: 25%;
+    width: max-content;
+    gap: 8px;
+    background: #ebeaea;
+    z-index: 1;
+    padding: 20px 48px;
 }
 
 .filterDiv {
@@ -23,15 +25,11 @@
     flex-direction: column;
     height: auto;
     width: auto;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    border-radius: 8px;
-    padding: 30px 10px;
     gap: 20px;
 }
 
-input {
-    margin: 0;
+.filterSection h3 {
+    text-align: center;
 }
 
 .catalogueSection {
@@ -40,48 +38,42 @@ input {
     justify-content: center;
     align-items: center;
     width: 80%;
+    gap: 10px;
 }
 
 .itemsContainer {
     display: grid;
     grid-template-columns: 
     repeat(
-        auto-fit,
-        minmax(375px, 1fr)
+        auto-fill,
+        minmax(295px, 1fr)
     );
-    gap: 40px;
+    gap: 20px;
     width: 100%;
     margin-top: 0;
 }
 
-.item {
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    height: auto;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size:large;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-.item:hover {
-    transform: scale(1.02);
-    background-color: rgba(126, 126, 126, 0.411);
-}
-
-.item p {
-    margin: 30px 40px;
-}
-
-h2 {
+h1, h2, h3, h4 {
     margin: 0;
+}
+
+h1 {
+    text-align: start;
+    color: rgb(0, 0, 0);
+    margin: 16px 6%;
+    font-weight: 700;
 }
 
 button {
     width: 20%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+input {
+    margin: 0;
 }

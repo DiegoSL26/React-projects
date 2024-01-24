@@ -7,6 +7,10 @@ export function getSneakers () {
   return filteredSneakers.map(sneaker => ({
     image: sneaker.image.thumbnail,
     title: sneaker.name,
+    price: sneaker.retailPrice,
+    gender: sneaker.gender,
+    brand: sneaker.brand,
+    colorway: sneaker.colorway,
     id: sneaker.id
   }))
 }

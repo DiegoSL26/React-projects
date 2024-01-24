@@ -9,12 +9,14 @@ export function Header ({ isAtTop, hoverRef, isHovered }) {
     if (isHovered) {
       headerRef.current.style.backgroundColor = 'black'
     } else {
-      if (!isAtTop) {
+      if (isAtTop === 0) {
+        headerRef.current.style.backgroundColor = 'transparent'
+        headerRef.current.style.borderBottom = '3px solid transparent'
+      } else if (isAtTop === 1) {
         headerRef.current.style.backgroundColor = 'rgba(0, 0, 0, 0.7)'
         headerRef.current.style.borderBottom = '3px solid black'
       } else {
-        headerRef.current.style.backgroundColor = 'transparent'
-        headerRef.current.style.borderBottom = '3px solid transparent'
+        headerRef.current.style.backgroundColor = 'black'
       }
     }
   }, [isAtTop, isHovered])
