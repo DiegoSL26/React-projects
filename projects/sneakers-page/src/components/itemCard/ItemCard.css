@@ -1,28 +1,27 @@
 .card {
-    width: 295px;
-    height: 385px;
-    background: #ebeaea;
+    width: 100%;
+    height: 350px;
+    background-color: #ebeaea;
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
-    justify-content: center;
     color: rgb(255, 255, 255);
     transition: 0.2s ease-in-out;
-    box-shadow: #a8a8a8 5px 5px 5px 0px;
+    
   }
   
-  .img {
-    scale: 0.60;
+  .sneakerImg {
+    width: 90%;
+    height: auto;
     position: absolute;
+    top: 3%;
     transition: 0.2s ease-in-out;
-    z-index: 1;
-  }
-
-  .link {
-    width: min-content;
+    background-color: white;
   }
   
   .textBox {
+    margin-top: 38px;
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -44,19 +43,28 @@
              1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
   }
   
-  .textBox > .head {
-    font-size: 20px;
+  .textHead {
+    padding: 0 20px;
+    position: absolute;
+    top: 75%;
+    font-size: 16px;
     font-weight: bold;
+    color: #000;
+    text-align: center;
   }
   
+  .card:hover > .textHead {
+    color: white;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+  }
+
   .card:hover > .textBox {
     opacity: 1;
   }
   
-  .card:hover > .img {
-    scale: 0.65;
-    filter: blur(7px);
-    animation: anim 3s infinite;
+  .card:hover > .sneakerImg {
+    filter: blur(10px);
   }
   
   @keyframes anim {

@@ -11,6 +11,10 @@
       cursor: pointer;
       display: inline-flex;
     }
+
+    span {
+      z-index: 2;
+    }
   
     .checkbox-wrapper-47 label:before {
       box-sizing: border-box;
@@ -23,13 +27,13 @@
       height: 1.4em;
       border: 2px solid #9098A9;
       border-radius: 6px;
-      z-index: -1;
+      z-index: 1;
     }
   
     .checkbox-wrapper-47 input[type=checkbox]:checked + label {
       padding-left: 1em;
-      color: #0f5229;
     }
+    
     .checkbox-wrapper-47 input[type=checkbox]:checked + label:before {
       top: 0;
       width: 100%;

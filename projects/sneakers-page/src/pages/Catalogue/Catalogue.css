@@ -1,31 +1,71 @@
+main {
+    width: 100%;
+}
+
+.headerContainer {
+    position: fixed;
+    top: 0;
+}
+
 .mainSection {
+    padding-top: 77px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.activationPanel {
     display: flex;
     flex-direction: row;
-    width:auto;
-    height: auto;
-    padding: 32px 0;
-    gap: 32px;
     justify-content: center;
-    padding: 0 5%;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    padding: 32px 0 8px 0;
+    margin: 0;
 }
 
 .filterSection {
     display: flex;
-    flex-direction: column;
-    height: min-content;
-    width: max-content;
-    gap: 8px;
-    background: #ebeaea;
+    flex-direction:column;
+    justify-content: center;
+    width: 100%;
     z-index: 1;
-    padding: 20px 48px;
+}
+
+.filterPanel {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+    justify-content: center;
+    background: #ebeaea;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+}
+
+.filterPanel.active {
+    max-height: 100%;
+    margin-bottom: 8px;
+}
+
+.filterPanel.active .filterDiv {
+    display: flex;
 }
 
 .filterDiv {
-    display: flex;
+    display: none;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     height: auto;
-    width: auto;
+    width: 25%;
     gap: 20px;
+    padding: 20px 0;
 }
 
 .filterSection h3 {
@@ -33,22 +73,17 @@
 }
 
 .catalogueSection {
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    gap: 10px;
 }
 
 .itemsContainer {
     display: grid;
-    grid-template-columns: 
-    repeat(
-        auto-fill,
-        minmax(295px, 1fr)
-    );
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
     width: 100%;
     margin-top: 0;
 }
