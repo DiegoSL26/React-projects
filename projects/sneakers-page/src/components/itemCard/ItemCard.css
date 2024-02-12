@@ -8,16 +8,17 @@
     align-items: center;
     color: rgb(255, 255, 255);
     transition: 0.2s ease-in-out;
-    
   }
   
   .sneakerImg {
-    width: 90%;
+    max-width: 90%;
     height: auto;
+    max-height: 239px;
     position: absolute;
     top: 3%;
     transition: 0.2s ease-in-out;
     background-color: white;
+    aspect-ratio: 1/1;
   }
   
   .textBox {

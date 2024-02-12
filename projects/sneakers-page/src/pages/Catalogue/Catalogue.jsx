@@ -5,6 +5,7 @@ import { Checkbox } from '../../components/checkbox/Checkbox'
 import { ItemCard } from '../../components/itemCard/ItemCard'
 import { FilterActivationPanel } from '../../components/filterActivationPanel/FilterActivationPanel'
 import { useDropdownFilterSection } from '../../hooks/useDropdownFilterSection'
+import { PromoSectionBanner } from '../../components/promoSection/PromoSectionBanner'
 import './Catalogue.css'
 
 function Catalogue () {
@@ -18,10 +19,11 @@ function Catalogue () {
       </header>
 
       <section className='mainSection'>
+        <PromoSectionBanner imgRoute='./src/assets/jordan-1-yellow.webp' bannerText="Jordan 1 Retro High Yellow Ochre'" />
         <div className='filterSection'>
           <ul className='activationPanel'>
-            <FilterActivationPanel handle={handleClick} reference={sortRef} onClick={handleClick} icon='./src/assets/filter-icon.svg' span='Filtros' />
-            <FilterActivationPanel handle={handleClick} reference={filterRef} icon='./src/assets/sort-icon.svg' span='Ordenar' />
+            <FilterActivationPanel handle={handleClick} reference={filterRef} onClick={handleClick} icon='./src/assets/filter-icon.svg' span='Filtros' />
+            <FilterActivationPanel handle={handleClick} reference={sortRef} icon='./src/assets/sort-icon.svg' span='Ordenar' />
           </ul>
           <div ref={filterSectionRef} className='filterPanel'>
             <div className='filterDiv'>
@@ -57,37 +59,7 @@ function Catalogue () {
             </div>
           </div>
           <div ref={sortSectionRef} className='filterPanel'>
-            <div className='filterDiv'>
-              <h3>Género</h3>
-              <form>
-                <Checkbox label='Niño' id='kid' name='kid' />
-                <Checkbox label='Hombre' id='man' name='man' />
-                <Checkbox label='Mujer' id='woman' name='woman' />
-              </form>
-            </div>
-            <div className='filterDiv'>
-              <h3>Marca</h3>
-              <form>
-                <Checkbox label='Nike' id='nike' name='nike' />
-                <Checkbox label='Adidas' id='adidas' name='adidas' />
-                <Checkbox label='New Balance' id='newBalance' name='newBalance' />
-              </form>
-            </div>
-            <div className='filterDiv'>
-              <h3>Precio</h3>
-              <form>
-                <label htmlFor='minPrice'><input type='number' id='minPrice' name='minPrice' placeholder='199.99' /> </label>
-                <label htmlFor='maxPrice'><input type='number' id='maxPrice' name='maxPrice' placeholder='499.99' /> </label>
-              </form>
-            </div>
-            <div className='filterDiv'>
-              <h3>Color</h3>
-              <form>
-                <Checkbox label='Azul' id='blue' name='blue' />
-                <Checkbox label='Rojo' id='red' name='red' />
-                <Checkbox label='Amarillo' id='yellow' name='yellow' />
-              </form>
-            </div>
+            <span className='filterDiv'>Ordenar</span>
           </div>
         </div>
         <div className='catalogueSection'>
