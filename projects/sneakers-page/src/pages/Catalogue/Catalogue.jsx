@@ -6,6 +6,7 @@ import { ItemCard } from '../../components/itemCard/ItemCard'
 import { FilterActivationPanel } from '../../components/filterActivationPanel/FilterActivationPanel'
 import { useDropdownFilterSection } from '../../hooks/useDropdownFilterSection'
 import { PromoSectionBanner } from '../../components/promoSection/PromoSectionBanner'
+import { Input } from '../../components/input/Input'
 import './Catalogue.css'
 
 function Catalogue () {
@@ -19,7 +20,7 @@ function Catalogue () {
       </header>
 
       <section className='mainSection'>
-        <PromoSectionBanner imgRoute='./src/assets/jordan-1-yellow.webp' bannerText="Jordan 1 Retro High Yellow Ochre'" />
+        <PromoSectionBanner imgRoute='./src/assets/jordan-1-yellow.webp' bannerText="Jordan 1 Retro High 'Yellow Ochre'" />
         <div className='filterSection'>
           <ul className='activationPanel'>
             <FilterActivationPanel handle={handleClick} reference={filterRef} onClick={handleClick} icon='./src/assets/filter-icon.svg' span='Filtros' />
@@ -59,7 +60,14 @@ function Catalogue () {
             </div>
           </div>
           <div ref={sortSectionRef} className='filterPanel'>
-            <span className='filterDiv'>Ordenar</span>
+            <div className='sortDiv'>
+              <h3>Ordenar por</h3>
+              <form className='sortOptions'>
+                <Input label='Precio: alto-bajo' id='ascendant' name='ascendant' />
+                <Input label='Precio: bajo-alto' id='descendent' name='descendent' />
+                <Input label='Más reciente' id='recent' name='recent' />
+              </form>
+            </div>
           </div>
         </div>
         <div className='catalogueSection'>

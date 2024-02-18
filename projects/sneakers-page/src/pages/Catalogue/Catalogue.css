@@ -57,6 +57,10 @@ main {
     display: flex;
 }
 
+.filterPanel.active .sortDiv {
+    display: flex;
+}
+
 .filterDiv {
     display: none;
     flex-direction: column;
@@ -87,6 +91,22 @@ main {
     gap: 12px;
     width: 100%;
     margin-top: 0;
+}
+
+.sortDiv {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 0;
+    gap: 16px;
+}
+
+.sortOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin: 16px 0;
 }
 
 h1, h2, h3, h4 {
