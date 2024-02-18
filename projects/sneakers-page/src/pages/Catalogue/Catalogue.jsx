@@ -20,11 +20,11 @@ function Catalogue () {
       </header>
 
       <section className='mainSection'>
-        <PromoSectionBanner imgRoute='./src/assets/jordan-1-yellow.webp' bannerText="Jordan 1 Retro High 'Yellow Ochre'" />
+        <PromoSectionBanner imgRoute='src/assets/jordan-1-yellow.webp' bannerText="Jordan 1 Retro High 'Yellow Ochre'" />
         <div className='filterSection'>
           <ul className='activationPanel'>
-            <FilterActivationPanel handle={handleClick} reference={filterRef} onClick={handleClick} icon='./src/assets/filter-icon.svg' span='Filtros' />
-            <FilterActivationPanel handle={handleClick} reference={sortRef} icon='./src/assets/sort-icon.svg' span='Ordenar' />
+            <FilterActivationPanel handle={handleClick} reference={filterRef} onClick={handleClick} icon='src/assets/filter-icon.svg' span='Filtros' />
+            <FilterActivationPanel handle={handleClick} reference={sortRef} icon='src/assets/sort-icon.svg' span='Ordenar' />
           </ul>
           <div ref={filterSectionRef} className='filterPanel'>
             <div className='filterDiv'>

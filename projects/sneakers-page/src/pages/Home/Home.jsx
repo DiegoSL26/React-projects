@@ -24,13 +24,13 @@ function Home () {
           <VideoSection handleScrollClick={handleScrollClickBottom} />
         </div>
         <div ref={sliderRef}>
-          <ImageContainer imageRoute='./src/assets/bad-bunny-brown-forum.jpg' />
+          <ImageContainer imageRoute='src/assets/bad-bunny-brown-forum.jpg' />
         </div>
         <div>
-          <ImageContainer imageRoute='./src/assets/jordan1.jpg' />
+          <ImageContainer imageRoute='src/assets/jordan1.jpg' />
         </div>
         <div>
-          <ImageContainer imageRoute='./src/assets/stan-smith.jpg' />
+          <ImageContainer imageRoute='src/assets/stan-smith.jpg' />
         </div>
       </div>
 
