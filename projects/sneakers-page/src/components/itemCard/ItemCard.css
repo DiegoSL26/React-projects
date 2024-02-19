@@ -87,3 +87,16 @@
     cursor: pointer;
     background-color: #616161; 
   }
+
+  @media only screen and (max-width: 1000px) {
+    .textHead {
+      font-size: x-large;
+      top: 75%;
+    }
+    .card {
+      height: 450px;
+    }
+    .sneakerImg {
+      max-height: 300px;
+    }
+  }

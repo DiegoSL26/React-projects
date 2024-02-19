@@ -8,9 +8,7 @@ export function ImageContainer ({ imageRoute }) {
         <img src={imageRoute} alt='Sneaker Img' />
       </div>
       <footer className='footerImgSection'>
-        <ul>
-          <li><MainButton buttonText='Ver detalle' route='/detail' /></li>
-        </ul>
+        <MainButton buttonText='Ver detalle' route='/detail' />
       </footer>
     </section>
   )

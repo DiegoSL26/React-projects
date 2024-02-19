@@ -19,3 +19,8 @@
     transform: scale(1.05);
 }
 
+@media only screen and (max-width: 1000px) {
+    .mainButton {
+      scale: 2;
+    }
+}

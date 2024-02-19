@@ -134,31 +134,42 @@ input {
     margin: 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
+    h3{
+        font-size: 2rem;
+    }
+    .activationPanel {
+        gap: 200px;
+        padding: 50px 0 50px 0;
+    }
     .filterSection{
         align-items: center;
     }
-    .filterPanel {
+    .filterPanel.active {
         flex-direction: column;
-        gap: 0;
+        gap: 16px;
+        padding: 0 0 32px 0;
     }
     .filterDiv {
         width: 100%;
-        gap: 12px;
+        gap: 24px;
     }
     .filterDiv form {
-        gap: 6px;
+        gap: 50px;
     }
     .sortDiv {
         width: 100%;
     }
     .sortOptions {
-        gap: 12px;
+        gap: 48px;
         flex-direction: column;
         align-items: center;
     }
+    .catalogueSection {
+        margin-top: 0;
+    }
     .itemsContainer {
         grid-template-columns: 
-        repeat(auto-fill, minmax(200px, 1fr));
+        repeat(auto-fill, minmax(320px, 1fr));
     }
   }

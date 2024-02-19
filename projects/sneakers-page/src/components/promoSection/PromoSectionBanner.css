@@ -40,3 +40,14 @@
 .promoSection:hover .promoText {
     opacity: 1;
 }
+
+@media only screen and (max-width: 1000px) {
+    .promoSectionContainer{
+        width: 100%;
+    }
+    .promoSection {
+      padding: 100px 0 0 0;
+      max-width: 95%;
+      margin: auto;
+    }
+  }
