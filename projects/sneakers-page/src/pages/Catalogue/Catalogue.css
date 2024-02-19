@@ -133,3 +133,32 @@ form{
 input {
     margin: 0;
 }
+
+@media only screen and (max-width: 800px) {
+    .filterSection{
+        align-items: center;
+    }
+    .filterPanel {
+        flex-direction: column;
+        gap: 0;
+    }
+    .filterDiv {
+        width: 100%;
+        gap: 12px;
+    }
+    .filterDiv form {
+        gap: 6px;
+    }
+    .sortDiv {
+        width: 100%;
+    }
+    .sortOptions {
+        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .itemsContainer {
+        grid-template-columns: 
+        repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }

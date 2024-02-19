@@ -30,7 +30,6 @@
   align-items: center;
   height: 100%;
   transition: transform 0.3s ease;
-  
 }
 
 .leftHeaderNav li:hover{
@@ -56,7 +55,7 @@
   display: flex;;
   width: 100%;
   justify-content: end;
-  padding-right: 85px;
+  padding-right: 100px;
   filter: invert(100%);
 }
 
@@ -86,11 +85,39 @@
   height: 30px;
   width: auto;
   cursor: pointer;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   transition: transform 0.3s ease;
 }
 
 .navIcon:hover{
   transform: scale(1.1);
+}
+
+.responsiveSection{
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+.responsiveSection:hover{
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 900px) {
+  .leftHeaderNav {
+    display: none;
+  }
+
+  .responsiveSection{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .rightHeaderNav {
+    padding-right: 20px;
+  }
+
+  .logoContainer {
+    padding-left: 20px;
+  }
 }

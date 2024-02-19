@@ -26,6 +26,9 @@ export function Header ({ isAtTop, hoverRef, isHovered }) {
       <div className='logoContainer'>
         <Link to='/'><img className='pageLogo' src='https://cdn.freebiesupply.com/images/large/2x/air-jordan-logo-png-transparent.png' alt='Jordan logo vector' /></Link>
       </div>
+      <nav className='responsiveSection'>
+        <Link to='/catalogue'>Catálogo</Link>
+      </nav>
       <nav className='leftHeaderNav'>
         <ul>
           <li ref={hoverRef}><Link to='/catalogue'>Catálogo</Link></li>

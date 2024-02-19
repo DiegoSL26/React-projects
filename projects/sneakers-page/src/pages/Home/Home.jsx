@@ -6,6 +6,10 @@ import { Header } from '../../components/mainHeader/MainHeader'
 import { HeaderDropdownMenu } from '../../components/headerDropdownMenu/HeaderDropdownMenu'
 import { useHover } from '../../hooks/useHover'
 import { getSneakers } from '../../services/getSneakers'
+import React from 'react'
+import badBunnyForum from '../../assets/bad-bunny-brown-forum.jpg'
+import jordan1 from '../../assets/jordan1.jpg'
+import stanSmith from '../../assets/stan-smith.jpg'
 
 function Home () {
   const { isAtTop, sliderRef, sliderDiv, videoRef, handleScrollClickBottom, handleScroll } = UseScroll()
@@ -24,13 +28,13 @@ function Home () {
           <VideoSection handleScrollClick={handleScrollClickBottom} />
         </div>
         <div ref={sliderRef}>
-          <ImageContainer imageRoute='src/assets/bad-bunny-brown-forum.jpg' />
+          <ImageContainer imageRoute={badBunnyForum} />
         </div>
         <div>
-          <ImageContainer imageRoute='src/assets/jordan1.jpg' />
+          <ImageContainer imageRoute={jordan1} />
         </div>
         <div>
-          <ImageContainer imageRoute='src/assets/stan-smith.jpg' />
+          <ImageContainer imageRoute={stanSmith} />
         </div>
       </div>
 

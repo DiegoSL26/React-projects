@@ -8,6 +8,9 @@ import { useDropdownFilterSection } from '../../hooks/useDropdownFilterSection'
 import { PromoSectionBanner } from '../../components/promoSection/PromoSectionBanner'
 import { Input } from '../../components/input/Input'
 import './Catalogue.css'
+import jordan1Yellow from '../../assets/jordan-1-yellow.webp'
+import filterIcon from '../../assets/filter-icon.svg'
+import sortIcon from '../../assets/sort-icon.svg'
 
 function Catalogue () {
   const sneakers = getSneakers()
@@ -20,11 +23,11 @@ function Catalogue () {
       </header>
 
       <section className='mainSection'>
-        <PromoSectionBanner imgRoute='src/assets/jordan-1-yellow.webp' bannerText="Jordan 1 Retro High 'Yellow Ochre'" />
+        <PromoSectionBanner imgRoute={jordan1Yellow} bannerText="Jordan 1 Retro High 'Yellow Ochre'" />
         <div className='filterSection'>
           <ul className='activationPanel'>
-            <FilterActivationPanel handle={handleClick} reference={filterRef} onClick={handleClick} icon='src/assets/filter-icon.svg' span='Filtros' />
-            <FilterActivationPanel handle={handleClick} reference={sortRef} icon='src/assets/sort-icon.svg' span='Ordenar' />
+            <FilterActivationPanel handle={handleClick} reference={filterRef} onClick={handleClick} icon={filterIcon} span='Filtros' />
+            <FilterActivationPanel handle={handleClick} reference={sortRef} icon={sortIcon} span='Ordenar' />
           </ul>
           <div ref={filterSectionRef} className='filterPanel'>
             <div className='filterDiv'>
