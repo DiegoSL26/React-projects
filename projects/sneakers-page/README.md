@@ -1,5 +1,7 @@
 # Tienda de venta de zapatillas
 
+##Link de acceso a la página web desplegada en un dominio proporcionado por Vercel: https://sneakers-murex-delta.vercel.app/
+
 En este proyecto hecho en React se puede ver la landing page de una página para vender zapatillas utilizando información mockeada extraída de una API freemium (con límite de requests, por eso no se hace el fetch de datos y se usa información mockeada). 
 Se utilizan diferentes Hooks como:
  - useState.
