@@ -70,7 +70,44 @@ main {
     width: 25%;
     gap: 20px;
     padding: 20px 0;
+
+    & form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
 }
+
+.priceInput {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #d1d1d1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .priceInput:focus {
+    border-color: #686868;
+    box-shadow: 0 0 15px #d1d1d150;
+    transform: scale(1.02);
+  }
+  
+  .priceInput::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .priceInput:hover {
+    background-color: #f0f8ff;
+  }
 
 .filterSection h3 {
     text-align: center;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Header } from '../../components/mainHeader/MainHeader'
 import { getSneakers } from '../../services/getSneakers'
 import { Checkbox } from '../../components/checkbox/Checkbox'
@@ -7,14 +7,47 @@ import { FilterActivationPanel } from '../../components/filterActivationPanel/Fi
 import { useDropdownFilterSection } from '../../hooks/useDropdownFilterSection'
 import { PromoSectionBanner } from '../../components/promoSection/PromoSectionBanner'
 import { Input } from '../../components/input/Input'
-import './Catalogue.css'
 import jordan1Yellow from '../../assets/jordan-1-yellow.webp'
 import filterIcon from '../../assets/filter-icon.svg'
 import sortIcon from '../../assets/sort-icon.svg'
+import './Catalogue.css'
 
 function Catalogue () {
-  const sneakers = getSneakers()
   const { handleClick, filterRef, sortRef, filterSectionRef, sortSectionRef } = useDropdownFilterSection()
+  const sneakers = getSneakers()
+  const [filteredSneakers, setFilteredSneakers] = useState(sneakers)
+  const [filter, setFilter] = useState({
+    gender: ['men', 'women', 'kid'],
+    brand: ['Nike', 'adidas', 'Jordan'],
+    minPrice: 0,
+    maxPrice: 500
+  })
+
+  useEffect(() => {
+    setFilteredSneakers(filterSneakers(sneakers))
+  }, [filter])
+
+  const filterSneakers = (sneakers) => {
+    return sneakers.filter(sneaker => {
+      return (
+        filter.brand.includes(sneaker.brand) &&
+        filter.gender.includes(sneaker.gender) &&
+        sneaker.price >= filter.minPrice && sneaker.price <= filter.maxPrice
+      )
+    })
+  }
+
+  const handleChangeMinPrice = (event) => {
+    setFilter({ ...filter, minPrice: event.target.value })
+  }
+
+  const handleChangeMaxPrice = (event) => {
+    if (event.target.value === '') {
+      setFilter({ ...filter, maxPrice: 500 })
+    } else {
+      setFilter({ ...filter, maxPrice: event.target.value })
+    }
+  }
 
   return (
     <main>
@@ -33,32 +66,24 @@ function Catalogue () {
             <div className='filterDiv'>
               <h3>Género</h3>
               <form>
-                <Checkbox label='Niño' id='kid' name='kid' />
-                <Checkbox label='Hombre' id='man' name='man' />
-                <Checkbox label='Mujer' id='woman' name='woman' />
+                <Checkbox setFilter={setFilter} filterName='gender' label='Niño' id='kid' name='kid' />
+                <Checkbox setFilter={setFilter} filterName='gender' label='Hombre' id='men' name='men' />
+                <Checkbox setFilter={setFilter} filterName='gender' label='Mujer' id='women' name='women' />
               </form>
             </div>
             <div className='filterDiv'>
               <h3>Marca</h3>
               <form>
-                <Checkbox label='Nike' id='nike' name='nike' />
-                <Checkbox label='Adidas' id='adidas' name='adidas' />
-                <Checkbox label='New Balance' id='newBalance' name='newBalance' />
+                <Checkbox setFilter={setFilter} filterName='brand' label='Nike' id='nike' name='Nike' />
+                <Checkbox setFilter={setFilter} filterName='brand' label='Adidas' id='adidas' name='adidas' />
+                <Checkbox setFilter={setFilter} filterName='brand' label='Jordan' id='jordan' name='Jordan' />
               </form>
             </div>
             <div className='filterDiv'>
               <h3>Precio</h3>
               <form>
-                <label htmlFor='minPrice'><input type='number' id='minPrice' name='minPrice' placeholder='199.99' /> </label>
-                <label htmlFor='maxPrice'><input type='number' id='maxPrice' name='maxPrice' placeholder='499.99' /> </label>
-              </form>
-            </div>
-            <div className='filterDiv'>
-              <h3>Color</h3>
-              <form>
-                <Checkbox label='Azul' id='blue' name='blue' />
-                <Checkbox label='Rojo' id='red' name='red' />
-                <Checkbox label='Amarillo' id='yellow' name='yellow' />
+                <label htmlFor='minPrice'><input className='priceInput' type='number' id='minPrice' name='minPrice' placeholder='$0' onChange={handleChangeMinPrice} /> </label>
+                <label htmlFor='maxPrice'><input className='priceInput' type='number' id='maxPrice' name='maxPrice' placeholder='$500' onChange={handleChangeMaxPrice} /> </label>
               </form>
             </div>
           </div>
@@ -75,7 +100,7 @@ function Catalogue () {
         </div>
         <div className='catalogueSection'>
           <ul className='itemsContainer'>
-            {sneakers.map(sneaker => (
+            {filteredSneakers.map(sneaker => (
               <ItemCard key={sneaker.id} imageRoute={sneaker.image} title={sneaker.title} price={sneaker.price} brand={sneaker.brand} gender={sneaker.gender} colorway={sneaker.colorway} />
             ))}
           </ul>
