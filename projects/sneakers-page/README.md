@@ -1,5 +1,7 @@
 # Tienda de venta de zapatillas
 
+#Link de acceso a la página web desplegada en un dominio proporcionado por Vercel: https://sneakers-murex-delta.vercel.app/
+
 En este proyecto hecho en React se puede ver la landing page de una página para vender zapatillas utilizando información mockeada extraída de una API freemium (con límite de requests, por eso no se hace el fetch de datos y se usa información mockeada). 
 Se utilizan diferentes Hooks como:
  - useState.
@@ -12,6 +14,8 @@ Además, se implementan distintas animaciones en CSS, así como tambien propieda
 
 
 # Sneaker sales store.
+
+#Access link to the web page displayed on a domain provided by Vercel: https://sneakers-murex-delta.vercel.app/
 
 In this project made in React you can see the landing page of a page to sell sneakers using simulated information extracted from a freemium API (with a request limit, that is why the data is not fetched and simulated information is used).
 Different hooks are used such as:
