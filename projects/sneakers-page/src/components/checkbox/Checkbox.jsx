@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import { useState, useContext } from 'react'
+import { FiltersContext } from '../../context/filters'
 import './Checkbox.css'
 
-export function Checkbox ({ name, id, label, setFilter, filterName }) {
+export function Checkbox ({ name, id, label, filterName }) {
   const [checked, setChecked] = useState(true)
+  const { setFilter } = useContext(FiltersContext)
 
   const handleCheckBoxChange = (event) => {
     setChecked(event.target.checked)

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Header } from '../../components/mainHeader/MainHeader'
 import { getSneakers } from '../../services/getSneakers'
 import { Checkbox } from '../../components/checkbox/Checkbox'
@@ -10,44 +10,17 @@ import { Input } from '../../components/input/Input'
 import jordan1Yellow from '../../assets/jordan-1-yellow.webp'
 import filterIcon from '../../assets/filter-icon.svg'
 import sortIcon from '../../assets/sort-icon.svg'
+import { useFilters } from '../../hooks/useFilters'
 import './Catalogue.css'
 
 function Catalogue () {
+  const initialSneakers = getSneakers()
+  const [sneakers] = useState(initialSneakers)
+
   const { handleClick, filterRef, sortRef, filterSectionRef, sortSectionRef } = useDropdownFilterSection()
-  const sneakers = getSneakers()
-  const [filteredSneakers, setFilteredSneakers] = useState(sneakers)
-  const [filter, setFilter] = useState({
-    gender: ['men', 'women', 'kid'],
-    brand: ['Nike', 'adidas', 'Jordan'],
-    minPrice: 0,
-    maxPrice: 500
-  })
+  const { filterSneakers, handleChangeMinPrice, handleChangeMaxPrice } = useFilters()
 
-  useEffect(() => {
-    setFilteredSneakers(filterSneakers(sneakers))
-  }, [filter])
-
-  const filterSneakers = (sneakers) => {
-    return sneakers.filter(sneaker => {
-      return (
-        filter.brand.includes(sneaker.brand) &&
-        filter.gender.includes(sneaker.gender) &&
-        sneaker.price >= filter.minPrice && sneaker.price <= filter.maxPrice
-      )
-    })
-  }
-
-  const handleChangeMinPrice = (event) => {
-    setFilter({ ...filter, minPrice: event.target.value })
-  }
-
-  const handleChangeMaxPrice = (event) => {
-    if (event.target.value === '') {
-      setFilter({ ...filter, maxPrice: 500 })
-    } else {
-      setFilter({ ...filter, maxPrice: event.target.value })
-    }
-  }
+  const filteredSneakers = filterSneakers(sneakers)
 
   return (
     <main>
@@ -66,17 +39,17 @@ function Catalogue () {
             <div className='filterDiv'>
               <h3>Género</h3>
               <form>
-                <Checkbox setFilter={setFilter} filterName='gender' label='Niño' id='kid' name='kid' />
-                <Checkbox setFilter={setFilter} filterName='gender' label='Hombre' id='men' name='men' />
-                <Checkbox setFilter={setFilter} filterName='gender' label='Mujer' id='women' name='women' />
+                <Checkbox filterName='gender' label='Niño' id='kid' name='kid' />
+                <Checkbox filterName='gender' label='Hombre' id='men' name='men' />
+                <Checkbox filterName='gender' label='Mujer' id='women' name='women' />
               </form>
             </div>
             <div className='filterDiv'>
               <h3>Marca</h3>
               <form>
-                <Checkbox setFilter={setFilter} filterName='brand' label='Nike' id='nike' name='Nike' />
-                <Checkbox setFilter={setFilter} filterName='brand' label='Adidas' id='adidas' name='adidas' />
-                <Checkbox setFilter={setFilter} filterName='brand' label='Jordan' id='jordan' name='Jordan' />
+                <Checkbox filterName='brand' label='Nike' id='nike' name='Nike' />
+                <Checkbox filterName='brand' label='Adidas' id='adidas' name='adidas' />
+                <Checkbox filterName='brand' label='Jordan' id='jordan' name='Jordan' />
               </form>
             </div>
             <div className='filterDiv'>
